@@ -1,0 +1,391 @@
+<%- include("./partials/topcryptosheader.ejs")%>
+
+<body id="body1">
+
+  <script>// Connect to the WebSocket server
+     // Function to refresh the page every 5 seconds
+     function silentRefresh() {
+            location.reload(); // Reload the page
+        }
+
+        // Call silentRefresh() every 5 seconds (5000 milliseconds)
+        setInterval(silentRefresh, 5000); 
+    </script>
+
+<script>
+   const searchBar = document.getElementById("search-input");
+        const elements = document.querySelectorAll(".element");
+
+        // Add an input event listener to the search bar
+        searchBar.addEventListener("input", () => {
+            const searchValue = searchBar.value.toLowerCase();
+
+            // Loop through all elements and hide those that don't match the search
+            elements.forEach((element) => {
+                const text = element.textContent.toLowerCase();
+                if (text.includes(searchValue)) {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            });
+        });
+</script>
+    <div class="assetsprice">
+        <div class="overallmarket">
+            <div>
+                <div class="keydiv">Active cryptos:-</div>   
+                <div class="valuediv"><%= locals.data1.data.active_cryptocurrencies %></div>
+                </div>
+                <div><div class="keydiv">Total market cap:-</div>   
+                <div class="valuediv"><%= locals.data1.data.quote.USD.total_market_cap %>USD </div></div>
+                <div><div class="keydiv">24hrs volume:-</div>   
+                <div class="valuediv"><%= locals.data1.data.quote.USD.total_volume_24h_reported %>USD </div></div>
+                <div><div class="keydiv">defi 24 hrs volume:-</div>   
+                <div class="valuediv"><%= locals.data1.data.quote.USD.defi_volume_24h %>USD </div></div>
+                
+            </div>
+
+    <div class="logoandsearch">
+        <div class="logo" ><h1 style="background-color: black; color: white;">SK Tech</h1></div>
+     
+    </div>
+
+        <div class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 30">
+            <polygon points="20,5 35,35 5,35" fill="aqua" />
+          </svg>
+          </div>
+        <div class="col1">
+          <div class="col1img"></div>
+          <div class="col1coinname">coin name</div>
+          <div class="col1coinsymbol"></div>
+        </div>
+          
+          <div class="col2"><h6>price usd</h6> </div>
+          <div class="col3"><h6>24hrs %</h6></div>
+          <div class="col4"> <h6>Supply</h6></div>
+          <div class="col5"><h6>market cap</h6></div>
+          <div class="col6"><h6>volume</h6></div>
+          <div class="col7"><h6>Circulating supply</h6></div>
+
+
+
+        </div>
+      </div>
+
+      <div class="fulltopcryptosdata">
+
+        <div id="searresult" class="data1"><div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+          <text x="10" y="30" font-size="30" fill="aqua">1</text>
+        </svg>
+        
+        
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/1.png" alt=""></div>
+          <div class="col1coinname">Bitcoin</div>
+          <div class="col1coinsymbol">BTC</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.BTC.USD.PRICE).toFixed(2)%>
+
+          </h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.BTC.USD.CHANGEPCT24HOUR).toFixed(2) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.BTC.USD.SUPPLY).toFixed(5) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.BTC.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.BTC.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.BTC.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+        </div>
+
+
+
+        <div id="searresult" class="data1"><div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+          <text x="10" y="30" font-size="30" fill="aqua">2</text>
+        </svg>
+        
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/2.png" alt=""></div>
+          <div class="col1coinname">Ethereum</div>
+          <div class="col1coinsymbol">BTC</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.ETH.USD.PRICE).toFixed(2) %> </div>
+            <div class="col3"><h6><%= parseFloat(locals.data.RAW.ETH.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+            <div class="col4"> <h6><%= parseFloat(locals.data.RAW.ETH.USD.SUPPLY).toFixed(4) %></h6></div>
+            <div class="col5"><h6><%= locals.data.RAW.ETH.USD.MKTCAP %></h6></div>
+            <div class="col6"><h6><%= locals.data.RAW.ETH.USD.TOTALVOLUME24HTO %></h6></div>
+            <div class="col7"><h6><%= locals.data.RAW.ETH.USD.CIRCULATINGSUPPLY %></h6></div>
+  
+  
+  
+
+        </div>
+
+
+        <div id="searresult" class="data1"><div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+          <text x="10" y="30" font-size="30" fill="aqua">3</text>
+        </svg>
+        
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/3.png" alt=""></div>
+          <div class="col1coinname">Tether</div>
+          <div class="col1coinsymbol">USDT</div>
+        </div>
+          
+          <div class="col2" style="color: green;"></h6 > <%= parseFloat(locals.data.RAW.USDT.USD.PRICE).toFixed(2)%></div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.USDT.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.USDT.USD.SUPPLY).toFixed(4) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.USDT.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.USDT.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.USDT.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+
+        </div>
+
+
+        <div id="searresult" class="data1"><div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+          <text x="10" y="30" font-size="30" fill="aqua">4</text>
+        </svg>
+        
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/4.png" alt=""></div>
+          <div class="col1coinname">BNB</div>
+          <div class="col1coinsymbol">BNB</div>
+        </div>
+          
+          <div class="col2" style="color: green;"></h6 ><%= parseFloat(locals.data.RAW.BNB.USD.PRICE ).toFixed(2)%> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.BNB.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.BNB.USD.SUPPLY).toFixed(3) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.BNB.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.BNB.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.BNB.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+
+        </div>
+
+        <div id="searresult" class="data1"><div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+          <text x="10" y="30" font-size="30" fill="aqua">5</text>
+        </svg>
+        
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/5.png" alt=""></div>
+          <div class="col1coinname">XRP</div>
+          <div class="col1coinsymbol">XRP</div>
+        </div>
+          
+          <div class="col2" style="color: green;"></h6 > <%= parseFloat(locals.data.RAW.XRP.USD.PRICE ).toFixed(2)%></div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.XRP.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.XRP.USD.SUPPLY).toFixed(3) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.XRP.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.XRP.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.XRP.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+        </div>
+
+        <div id="searresult" class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+            <text x="10" y="30" font-size="30" fill="aqua">6</text>
+          </svg>
+          
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/6.png" alt=""></div>
+          <div class="col1coinname">USD Coin</div>
+          <div class="col1coinsymbol">USDC</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.USDC.USD.PRICE).toFixed(2) %></h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.USDC.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.USDC.USD.SUPPLY).toFixed(3) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.USDC.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.USDC.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.USDC.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+
+        </div>
+
+        <div id="searresult" class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+            <text x="10" y="30" font-size="30" fill="aqua">7</text>
+          </svg>
+          
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/7.png" alt=""></div>
+          <div class="col1coinname">Cardano</div>
+          <div class="col1coinsymbol">ADA</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.ADA.USD.PRICE).toFixed(2)   %></h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.ADA.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.ADA.USD.SUPPLY).toFixed(2) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.ADA.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.ADA.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.ADA.USD.CIRCULATINGSUPPLY %></h6></div>
+
+        </div>
+
+        <div id="searresult" class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+            <text x="10" y="30" font-size="30" fill="aqua">8</text>
+          </svg>
+          
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/8.png" alt=""></div>
+          <div class="col1coinname">Dogecoin</div>
+          <div class="col1coinsymbol">DOGE</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.DOGE.USD.PRICE).toFixed(2) %></h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.DOGE.USD.CHANGEPCT24HOUR).toFixed(5) %></h6>
+          </h6></div>
+          <div class="col4"> <h6><h6><%= parseFloat(locals.data.RAW.DOGE.USD.SUPPLY).toFixed(5) %></h6>
+            </h6></div>
+          <div class="col5"><h6><%= parseFloat(locals.data.RAW.DOGE.USD.MKTCAP).toFixed(2)  %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.DOGE.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.DOGE.USD.CIRCULATINGSUPPLY %></h6></div>
+
+        </div>
+
+
+
+        <div id="searresult" class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+            <text x="10" y="30" font-size="30" fill="aqua">9</text>
+          </svg>
+          
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/9.png" alt=""></div>
+          <div class="col1coinname">Solana</div>
+          <div class="col1coinsymbol">SOL</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.SOL.USD.PRICE).toFixed(2)  %></h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.SOL.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.SOL.USD.SUPPLY).toFixed(2) %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.SOL.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.SOL.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.SOL.USD.CIRCULATINGSUPPLY %></h6></div>
+
+
+        </div>
+
+        <div id="searresult" class="data1">
+          <div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40">
+            <text x="10" y="30" font-size="30" fill="aqua">10</text>
+          </svg>
+          
+          
+          </div>
+        <div class="col1">
+          <div class="col1img"><img height="20px" width="20px" src="./images/10.png" alt=""></div>
+          <div class="col1coinname">Tron</div>
+          <div class="col1coinsymbol">TRX</div>
+        </div>
+          
+          <div class="col2"><h6><%= parseFloat(locals.data.RAW.TRX.USD.PRICE).toFixed(2) %></h6> </div>
+          <div class="col3"><h6><%= parseFloat(locals.data.RAW.TRX.USD.CHANGEPCT24HOUR).toFixed(5) %></h6></div>
+          <div class="col4"> <h6><%= parseFloat(locals.data.RAW.TRX.USD.SUPPLY).toFixed(2)  %></h6></div>
+          <div class="col5"><h6><%= locals.data.RAW.TRX.USD.MKTCAP %></h6></div>
+          <div class="col6"><h6><%= locals.data.RAW.TRX.USD.TOTALVOLUME24HTO %></h6></div>
+          <div class="col7"><h6><%= locals.data.RAW.TRX.USD.CIRCULATINGSUPPLY %></h6></div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="nextbutton">
+          <div id="lessThanButton" style="cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+              <text x="10" y="25" font-size="30" fill="aqua" >&lt;</text>
+            </svg>
+          </div>
+        <div class="seperates">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+            <circle cx="5" cy="5" r="4" fill="aqua" />
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+            <circle cx="5" cy="5" r="4" fill="aqua" />
+          </svg>
+          
+        </div>
+
+          <div id="greaterThanButton" style="cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+              <text x="10" y="25" font-size="30" fill="aqua">&gt;</text>
+            </svg>
+          </div>
+                </div>
+     
+     
+     
+     
+              </div>
+  
+
+
+</body>
+
+<footer id="f1">
+    <div class="one">
+      <ul class="social_icon">
+        <h3 style="color: brown; font-family: 'Black Ops One', cursive;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        font-family: 'Rubik Iso', cursive;">follow us on </h3>
+        <li><a href="https://shaikfiroz-developer20.github.io/myresume.github.io/"><img  height="40px" width="40px" src="./images/github.png" alt=""></a></li>
+        <li><a href="https://linkedin.com/in/firoz-shaik-711384250"><img height="40px" width="40px" src="./images/Linkden.png" alt=""></a></li>
+        </ul>
+  
+    </div>
+   
+    <div class="three">
+      <p>Name: SHAIK FIROZ</p>
+      <p>Contact Me: <a href=" https://wa.me/917893038313?text=Hi%20firoz%20i'am%20intrested%20in%20your%20work">+918333886963</a></p>
+      <p>
+        Email: <a href="mailto:">firoz.21bce9396@gmail.com</a>
+      </p>
+      </div>
+  
+    <div class="two ">
+      <ul class="menus" >
+        <li ><a href="#">Home</a></li>
+        <li><a href="#">topcryptos</a></li>
+        <li><a href="#">market stats</a></li>
+        <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    </footer>
+     
+    </body>
+    </html>

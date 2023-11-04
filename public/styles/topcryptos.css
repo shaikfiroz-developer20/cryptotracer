@@ -1,0 +1,278 @@
+#body1{
+    margin: 0px;
+padding: 0px;
+background-color: #010d18
+;
+display: grid;
+color: white;
+grid-template-rows:0.2fr 3.5fr;
+}
+
+.assetsprice{
+
+    display: grid;
+    margin-top: 20px;
+    grid-template-rows: 40px 60px;
+}
+
+
+.overallmarket{
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.overallmarket div{
+  margin-left: 30px;
+    width: fit-content;
+    height: 25px;
+display: flex;
+flex-shrink: 1;
+font-size: medium;
+
+}
+
+.keydiv{
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.valuediv{
+  color: chartreuse;
+}
+
+.col2 , .col6{
+  color: green;
+}
+
+.col3{
+  color: rgb(250, 250, 0);
+}
+
+.col7{
+  color: orange;
+}
+.col5{
+  color: skyblue;
+}
+.valuediv{
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoandsearch{
+    display: flex;
+    width: 98%;
+}
+
+.logo{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    margin-left: 30px;
+    align-items: center;
+
+}
+
+.search{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#f1{
+    position: relative;
+    display: grid;
+    grid-template-rows: 0.3fr 0.4fr;
+    grid-template-columns: 2fr 1fr;
+    background-color: #1a222a;
+  }
+  
+  
+  @media screen and (max-width:736px){
+    #f1{
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        display: grid;
+        grid-template-rows: 0.3fr 0.4fr;
+        grid-template-columns: 2fr 1fr;
+        background-color: #1a222a;
+      }
+      
+  }
+  
+  .one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social_icon {
+    list-style: none;
+    width: fit-content;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social_icon li {
+    animation: float 3s infinite;
+  }
+  
+  .social_icon img {
+    width: 30px; /* Adjust the size as needed */
+  }
+  
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .menus{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menus li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .menus a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .menus li:hover{
+    background-color: #010d18;
+    border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.25); /* Apply zoom-out effect on hover */
+  }
+  
+  .three{
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .three{
+    margin: 0;
+    color: white;
+  }
+
+
+  .search {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: #010d18;
+}
+
+/* Search input field */
+.search-input {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+width: 400px;
+    border: none;
+    outline: none;
+}
+
+/* Search button */
+.search-button {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Search button hover effect */
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+
+.data1{
+  display: grid;
+  margin-left: 30px;
+  gap: 20px;
+grid-template-columns: 20px 1fr 100px 100px 200px 1fr 1fr 1fr;
+  align-items: center;
+  height: 70px;
+  width: 98%;
+padding: 10px;}
+
+
+.col1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+ .col1img{
+margin-left: 20px;
+}
+
+.col2{
+  align-items: center;
+  justify-content: center;
+}
+.col3{
+  align-items: center;
+  justify-content: center;
+}
+.col4{
+  align-items: center;
+  justify-content: center;
+}
+.col5{
+  align-items: center;
+  justify-content: center;
+}
+.col6{
+  align-items: center;
+  justify-content: center;
+}
+.col7{
+  align-items: center;
+  justify-content: center;
+}
+
+h6{
+  justify-self: center;
+  width:fit-content
+}
+
+
+.nextbutton{
+  display: flex;
+  justify-content: center;
+}

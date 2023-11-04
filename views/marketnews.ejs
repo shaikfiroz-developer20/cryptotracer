@@ -1,0 +1,86 @@
+<%- include("./partials/header.ejs")%>
+<body id="body2">
+
+    <div >
+        <% if (Array.isArray(data) && data.length > 0) { %>
+          <ul>
+            <% data.forEach(function(item) { %>
+              <div class="newsbuddy">
+                <a href="<%= item.url %>"><img style="margin-left: 20px;" height="100" width="130" src="<%= item.imageurl %>" alt=""></a>
+                <div class="inoutpa">
+               <a href="<%= item.url %>"><p class="pa1" style=""><%= item.title %></p></a> 
+                <p class="pa2"><%= item.body %><a href="<%= item.url %>"> readmore...</a></p>
+              </div>
+              </div>
+            <% }); %>
+          </ul>
+        <% } else { %>
+          <p>No data available.</p>
+        <% } %>
+      </div>
+      
+      
+     
+   <script>
+    /*function layouts() {
+        const data = locals.result;
+        const p1Element = document.getElementById("p1");
+    
+        if (data && data.length > 0) {
+            for (let j = 0; j < data.length; j++) {
+                // Create a new text node for each element and append it to the p1 element
+                const textNode = document.createTextNode(data[j]);
+                p1Element.appendChild(textNode);
+    
+                // Add a line break after each element (except the last one)
+                if (j < data.length - 1) {
+                    const br = document.createElement("br");
+                    p1Element.appendChild(br);
+                }
+            }
+        } else {
+            // Handle the case where data is empty or undefined
+            p1Element.innerHTML = "No data available";
+        }
+    }*/
+    </script>
+    
+
+    </body>
+
+
+    <footer>
+        <div class="one">
+          <ul class="social_icon">
+            <h3 style="color: brown; font-family: 'Black Ops One', cursive;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: 'Roboto Slab', serif;
+            font-family: 'Rubik Iso', cursive;">follow us on </h3>
+            <li><a href="https://shaikfiroz-developer20.github.io/myresume.github.io/"><img  height="40px" width="40px" src="./images/github.png" alt=""></a></li>
+            <li><a href="https://linkedin.com/in/firoz-shaik-711384250"><img height="40px" width="40px" src="./images/Linkden.png" alt=""></a></li>
+            </ul>
+      
+        </div>
+       
+        <div class="three">
+          <p>Name: SHAIK FIROZ</p>
+          <p>Contact Me: <a href=" https://wa.me/917893038313?text=Hi%20firoz%20i'am%20intrested%20in%20your%20work">+918333886963</a></p>
+          <p>
+            Email: <a href="mailto:">firoz.21bce9396@gmail.com</a>
+          </p>
+          </div>
+      
+        <div class="two ">
+          <ul class="menus" >
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">topcryptos</a></li>
+            <li><a href="#">market stats</a></li>
+            <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        
+        
+        
+        </footer>
+         
+    </html>

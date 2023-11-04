@@ -1,0 +1,353 @@
+<%- include("./partials/header.ejs")%>
+
+
+<body>
+  <div class="cryto24hrsdata" >
+
+    <ul >
+      <li class="shade">cryptos:- <h6><%= locals.data.data.total_cryptocurrencies %>+</h6></li>
+      <li class="24hrsdata">total_market_cap:- <h6><%= locals.data.data.quote.USD.total_market_cap %>USD</h6></li>
+      <li class="24hrsdata">active cryptos:- <h6><%= locals.data.data.active_cryptocurrencies %></h6></li>
+      <li class="24hrsdata">defi marketcap:- <h6><%= locals.data.data.quote.USD.defi_market_cap %> USD</h6></li>
+      <li class="shade">ETH-dominance 24hrs:- <h6><%=parseFloat(locals.data.data.eth_dominance).toFixed(3)  %></h6> <img height="30px" width="30px"  src="images/gasstation.png" alt=""></li>
+
+    </ul>
+
+  </div>
+
+
+
+  <div class="topcryptos">
+<div class="data">
+
+   <p>
+    Blockchain technology, characterized by decentralization, ensures trust, security, and transparency 
+    in transactions across a network, reducing the need for intermediaries and enabling diverse applicat
+    ions beyond finance.
+ 
+   </p>
+
+</div>
+<div class="slidabledata" id="slidabledata">
+
+  <div class="box">
+    <div class="innerinner" style="position: relative;">
+      <svg width="471" height="460" viewBox="0 0 471 460" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 h-full w-full scale-x-110 scale-y-[1.07]">
+        <path d="M1.9511 429.288L11.2869 440.622L62.1852 440.622L77.434 459.135L454.797 459.136L470 440.678L470 294.634L457.522 279.474L457.522 102.687L446.81 89.6818L446.81 17.993L432.702 0.865088L22.8227 0.864544L8.09917 18.751L8.09916 156.332L0.999989 164.951L1.00031 239.898L9.10459 249.737L9.1046 361.981L1.76094 370.886L1.9511 429.288Z" stroke="url(#paint0_radial_3392_18698)" stroke-width="0.381271"></path>
+        <defs>
+          <radialGradient id="paint0_radial_3392_18698" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216.64 250.57) rotate(130.54) scale(242.881 1.52254e+06)">
+            <stop stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#00F3FF"></stop>
+          </radialGradient>
+        </defs>
+      
+        <!-- Group the elements and apply positioning -->
+        <g >
+          <a xlink:href="javascript:void(0);"  onclick="window.open('https://bitcoin.org/en/', '_blank');">
+            <rect x="35%" y="370" width="120" height="40" rx="20" fill="aqua" />
+            <text x="47%" y="393" dominant-baseline="middle" font-size="16" text-anchor="middle" fill="black">Learn More</text>
+          </a>
+      
+          <!-- Adjusted text about Ethereum -->
+          <text x="48%" y="290" font-size="13" text-anchor="middle" fill="aqua">
+            <tspan x="50%" dy="1.2em"> Bitcoin is a decentralized digital currency. Bitcoin transactions are </tspan>
+            <tspan x="50%" dy="1.2em"> verified by network nodes through cryptography and recorded in a </tspan>
+            <tspan x="50%" dy="1.2em"> public distributed   ledger called a blockchain.</tspan>
+          </text>
+      
+          <text x="50%" y="20" dominant-baseline="middle" font-size="24" text-anchor="middle" fill="aqua">Bitcoin</text>
+          <image width="420" height="200" x="0" y="60" xlink:href="../images/btc.jpg" alt=""/>
+        </g>
+      </svg>
+      
+      
+      
+    </div>
+  </div>
+
+  
+
+  <div class="box">
+    <div class="innerinner" style="position: relative;">
+      <svg width="471" height="460" viewBox="0 0 471 460" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 h-full w-full scale-x-110 scale-y-[1.07]">
+        <path d="M1.9511 429.288L11.2869 440.622L62.1852 440.622L77.434 459.135L454.797 459.136L470 440.678L470 294.634L457.522 279.474L457.522 102.687L446.81 89.6818L446.81 17.993L432.702 0.865088L22.8227 0.864544L8.09917 18.751L8.09916 156.332L0.999989 164.951L1.00031 239.898L9.10459 249.737L9.1046 361.981L1.76094 370.886L1.9511 429.288Z" stroke="url(#paint0_radial_3392_18698)" stroke-width="0.381271"></path>
+        <defs>
+          <radialGradient id="paint0_radial_3392_18698" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216.64 250.57) rotate(130.54) scale(242.881 1.52254e+06)">
+            <stop stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#00F3FF"></stop>
+          </radialGradient>
+        </defs>
+      
+        <!-- Group the elements and apply positioning -->
+        <g transform="translate(20, 20)">
+          <a xlink:href="javascript:void(0);"  onclick="window.open('https://ethereum.org/en/', '_blank');">
+            <rect x="35%" y="370" width="120" height="40" rx="20" fill="aqua" />
+            <text x="47%" y="393" dominant-baseline="middle" font-size="16" text-anchor="middle" fill="black">Learn More</text>
+          </a>
+      
+          <!-- Adjusted text about Ethereum -->
+          <text x="47%" y="290" font-size="13" text-anchor="middle" fill="aqua">
+            <tspan x="47%" dy="1.2em">Ethereum is a decentralized blockchain with smart contract functionality.</tspan>
+            <tspan x="47%" dy="1.2em">Ether is the native cryptocurrency of the platform. Among cryptocurrencies,</tspan>
+            <tspan x="47%" dy="1.2em">ether is second only to bitcoin in market capitalization.</tspan>
+          </text>
+      
+          <text x="50%" y="20" dominant-baseline="middle" font-size="24" text-anchor="middle" fill="aqua">Ethereum</text>
+          <image width="420" height="200" x="0" y="60" xlink:href="../images/ethereum.jpg" alt=""/>
+        </g>
+      </svg>
+      
+      
+      
+    </div>
+  </div>
+
+ 
+
+
+  <div class="box">
+    <div class="innerinner" style="position: relative;">
+      <svg width="471" height="460" viewBox="0 0 471 460" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 h-full w-full scale-x-110 scale-y-[1.07]">
+        <path d="M1.9511 429.288L11.2869 440.622L62.1852 440.622L77.434 459.135L454.797 459.136L470 440.678L470 294.634L457.522 279.474L457.522 102.687L446.81 89.6818L446.81 17.993L432.702 0.865088L22.8227 0.864544L8.09917 18.751L8.09916 156.332L0.999989 164.951L1.00031 239.898L9.10459 249.737L9.1046 361.981L1.76094 370.886L1.9511 429.288Z" stroke="url(#paint0_radial_3392_18698)" stroke-width="0.381271"></path>
+        <defs>
+          <radialGradient id="paint0_radial_3392_18698" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216.64 250.57) rotate(130.54) scale(242.881 1.52254e+06)">
+            <stop stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#00F3FF"></stop>
+          </radialGradient>
+        </defs>
+      
+        <!-- Group the elements and apply positioning -->
+        <g transform="translate(20, 20)">
+          <a xlink:href="javascript:void(0);"  onclick="window.open('https://ripple.com/xrp/', '_blank');">
+            <rect x="35%" y="370" width="120" height="40" rx="20" fill="aqua" />
+            <text x="47%" y="393" dominant-baseline="middle" font-size="16" text-anchor="middle" fill="black">Learn More</text>
+          </a>
+      
+          <!-- Adjusted text about Ethereum -->
+          <text x="47%" y="290" font-size="13" text-anchor="middle" fill="aqua">
+            <tspan x="48%" dy="1.2em">Ripple is a real-time gross settlement system, currency exchange </tspan>
+            <tspan x="48%" dy="1.2em"> and  a US-based technology company. that is open to financial  </tspan>
+            <tspan x="48%" dy="1.2em">institutions  worldwide and was created by Ripple Labs Inc.</tspan>
+            <tspan x="48%" dy="1.2em"> A US-based technology company. </tspan>
+
+          </text>
+      
+          <text x="50%" y="20" dominant-baseline="middle" font-size="24" text-anchor="middle" fill="aqua">XRP</text>
+          <image width="420" height="200" x="0" y="60" xlink:href="../images/XRP.jpg" alt=""/>
+        </g>
+      </svg>
+      
+      
+      
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="innerinner" style="position: relative;">
+      <svg width="471" height="460" viewBox="0 0 471 460" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 h-full w-full scale-x-110 scale-y-[1.07]">
+        <path d="M1.9511 429.288L11.2869 440.622L62.1852 440.622L77.434 459.135L454.797 459.136L470 440.678L470 294.634L457.522 279.474L457.522 102.687L446.81 89.6818L446.81 17.993L432.702 0.865088L22.8227 0.864544L8.09917 18.751L8.09916 156.332L0.999989 164.951L1.00031 239.898L9.10459 249.737L9.1046 361.981L1.76094 370.886L1.9511 429.288Z" stroke="url(#paint0_radial_3392_18698)" stroke-width="0.381271"></path>
+        <defs>
+          <radialGradient id="paint0_radial_3392_18698" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(216.64 250.57) rotate(130.54) scale(242.881 1.52254e+06)">
+            <stop stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#00F3FF"></stop>
+          </radialGradient>
+        </defs>
+      
+        <!-- Group the elements and apply positioning -->
+        <g transform="translate(20, 20)">
+          <a xlink:href="javascript:void(0);"  onclick="window.open('https://tether.to/en/', '_blank');">
+            <rect x="35%" y="370" width="120" height="40" rx="20" fill="aqua" />
+            <text x="47%" y="393" dominant-baseline="middle" font-size="16" text-anchor="middle" fill="black">Learn More</text>
+          </a>
+      
+          <!-- Adjusted text about Ethereum -->
+          <text x="47%" y="290" font-size="13" text-anchor="middle" fill="aqua">
+            <tspan x="47%" dy="1.2em">Tether is a cryptocurrency stablecoin, launched by the company Tether </tspan>
+            <tspan x="47%" dy="1.2em">Limited Inc.  in 2014.  As of July 2022, Tether Limited has minted the </tspan>
+            <tspan x="47%" dy="1.2em">USDT stablecoin on  ten protocols and blockchains. it's current</tspan>
+            <tspan x="47%" dy="1.2em"> is 1$.</tspan>
+
+          </text>
+      
+          <text x="50%" y="20" dominant-baseline="middle" font-size="24" text-anchor="middle" fill="aqua">USDT</text>
+          <image width="420" height="200" x="0" y="60" xlink:href="../images/usdt.jpg" alt=""/>
+        </g>
+      </svg>
+      
+      
+      
+    </div>
+  </div>
+
+  
+</div>
+  </div>
+
+
+
+
+
+  <div class="topcryptoexchanges">
+    <div class="lable">
+      <h1>TOP CRYPTO EXCHANGES</h1>
+    </div>
+<div class="images">
+<div class="exchanges"><img height="50px" width="50px" src="../images/binance.png" alt=""></div>
+<div class="exchanges"><img height="60px" width="100px"  src="../images/coinbase.png" alt=""></div>
+<div class="exchanges"><img height="70px" width="100px"  src="../images/buybit.png" alt=""></div>
+<div class="exchanges"><img height="80px" width="80px"  src="../images/wazirx.png" alt=""></div>
+<div class="exchanges"><img height="100px" width="130px"  src="../images/CoinDcx.png" alt=""></div>
+<div class="exchanges"><img height="100px" width="130px"  src="../images/csk.png" alt=""></div>
+
+</div>
+
+  </div>
+
+  <div class="learnaboutblockchain">
+    <div class="content1" style="margin-left: 250px; margin-top: 40px;">
+    <div class="content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="" stroke="aqua" stroke-width="2" />
+            <text x="50" y="50" text-anchor="middle" fill="aqua" font-size="24">1</text>
+        </svg>
+        <p><a href="https://cryptozombies.io/"target="_blank">Crypto Zombies. Crypto Zombies.</a></p>
+
+    </div>
+    <div class="line"><svg width="400" height="100"> <!-- Increased the canvas width to accommodate the longer line -->
+      <line x1="20" y1="30" x2="380" y2="30" stroke="aqua" stroke-width="2" /> <!-- Increased x2 value -->
+  </svg>
+  </div>
+
+    
+  <div class="content">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="" stroke="aqua" stroke-width="2" />
+        <text x="50" y="50" text-anchor="middle" fill="aqua" font-size="24">2</text>
+    </svg>
+    <p><a href="https://university.alchemy.com/"target="_blank">Alchemy University</a></p>
+
+</div>
+<div class="line"><svg width="400" height="100"> <!-- Increased the canvas width to accommodate the longer line -->
+  <line x1="20" y1="30" x2="380" y2="30" stroke="aqua" stroke-width="2" /> <!-- Increased x2 value -->
+</svg>
+</div>
+
+<div class="content">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+      <circle cx="50" cy="50" r="40" fill="" stroke="aqua" stroke-width="2" />
+      <text x="50" y="50" text-anchor="middle" fill="aqua" font-size="24">3</text>
+  </svg>
+  <p> <a href="https://speedrunethereum.com/"target="_blank">SPEEDRUN ETHEREUM.</a></p>
+
+</div>
+<div class="line"><svg width="400" height="100"> <!-- Increased the canvas width to accommodate the longer line -->
+<line x1="20" y1="30" x2="380" y2="30" stroke="aqua" stroke-width="2" /> <!-- Increased x2 value -->
+</svg>
+</div>
+
+<div class="content">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+      <circle cx="50" cy="50" r="40" fill="" stroke="aqua" stroke-width="2" />
+      <text x="50" y="50" text-anchor="middle" fill="aqua" font-size="24">4</text>
+  </svg>
+  <p><a href="https://learnweb3.io/" target="_blank">LearnWeb3</a> & <a href="https://academy.developerdao.com/"target="_blank">Developer DAO Academy.</a> </p>
+
+</div>
+</div>
+
+<div class="headingcontent">
+  <p style="margin-top: 150px; font-size: 30px; color: aqua; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 200px;"><img height="50px" width="50px" src="../images/arrow.png" alt="">Best Resuorces For Blockchain.</p>
+  <img  height="70px" width="70px" src="../images/smile.png" alt="">
+</div>
+</div>
+
+
+  <script>
+   const flavoursContainer = document.getElementById("slidabledata");
+const scrollIncrement = 400; // Width of each inner div
+const scrollInterval = 1000; // 3 seconds
+let isPaused = false;
+let i = 0; // Start at 0 to make the first div fully visible
+let reverse = false; // Flag to control the direction of motion
+
+window.addEventListener("load", () => {
+  function scroll() {
+    if (!isPaused) {
+      if (!reverse) {
+        if (i <= flavoursContainer.scrollWidth) {
+          flavoursContainer.scrollTo(i, 0);
+          i += scrollIncrement;
+          if (i >= flavoursContainer.scrollWidth - flavoursContainer.clientWidth) {
+            reverse = true; // Reverse direction when reaching the end
+          }
+        }
+      } else {
+        if (i >= 0) {
+          flavoursContainer.scrollTo(i, 0);
+          i -= scrollIncrement;
+          if (i <= 0) {
+            reverse = false; // Reset direction to forward when reaching the start
+          }
+        }
+      }
+    }
+    setTimeout(scroll, scrollInterval);
+  }
+
+  scroll(); // Start the scrolling animation
+
+  // Pause scrolling on hover
+  flavoursContainer.addEventListener("mouseenter", () => {
+    isPaused = true;
+  });
+
+  // Resume scrolling on hover exit
+  flavoursContainer.addEventListener("mouseleave", () => {
+    isPaused = false;
+  });
+});
+
+  </script>
+</body>
+
+
+
+
+
+<footer>
+  <div class="one">
+    <ul class="social_icon">
+      <h3 style="color: brown; font-family: 'Black Ops One', cursive;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Rubik Iso', cursive;">follow us on </h3>
+      <li><a href="https://shaikfiroz-developer20.github.io/myresume.github.io/"><img  height="40px" width="40px" src="./images/github.png" alt=""></a></li>
+      <li><a href="https://linkedin.com/in/firoz-shaik-711384250"><img height="40px" width="40px" src="./images/Linkden.png" alt=""></a></li>
+      </ul>
+
+  </div>
+ 
+  <div class="three">
+    <p>Name: SHAIK FIROZ</p>
+    <p>Contact Me: <a href=" https://wa.me/917893038313?text=Hi%20firoz%20i'am%20intrested%20in%20your%20work">+918333886963</a></p>
+    <p>
+      Email: <a href="mailto:">firoz.21bce9396@gmail.com</a>
+    </p>
+    </div>
+
+  <div class="two ">
+    <ul class="menus" >
+      <li ><a href="#">Home</a></li>
+      <li><a href="#">topcryptos</a></li>
+      <li><a href="#">market stats</a></li>
+      <li><a href="#">contact</a></li>
+      </ul>
+  </div>
+  
+  
+  
+  </footer>
+   
+  </body>
+  </html>

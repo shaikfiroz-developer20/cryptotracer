@@ -1,0 +1,386 @@
+/* Styling for the header and navigation */
+
+body{
+  margin: 0px;
+  padding: 0px;
+ display: grid;  
+ width: 100%;
+ grid-template-rows:0.2fr 40px 6fr 7fr 5.3fr 2fr ;
+
+font-family: 'Roboto Slab', serif;
+color: white;
+
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+.data{
+  background-image: url("../images/blockchain.jpg");
+  background-size: cover; /* This scales the image proportionally to cover the entire div */
+  background-repeat: no-repeat;}
+
+.data img{
+  width: 100%;
+  height: auto;
+} 
+
+
+.content{
+  width: 300px;
+  height: 100vh;
+}
+
+
+header {
+  background-color: #1a222a;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Black Ops One', cursive;}
+
+
+.main{
+  width: 90vh;
+}
+nav {
+  padding: 5px; 
+  width: 700px;
+justify-content: end;
+grid-column-start: 3;
+
+
+}
+
+.ul1 {
+  display: grid;
+  justify-content: center;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  grid-column-start: 5;
+}
+
+.ul1 li {
+  font-size: 17px;
+  color: white;
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth animation */
+}
+
+
+.ul1 li:hover {
+  background-color: #ffff;
+border-radius: 5px;
+  transform: scale(1.05); /* Apply zoom-out effect on hover */
+}
+
+.ul1 a{
+  text-decoration: none;
+}
+
+.cryto24hrsdata{
+  background-color: #1a222a;
+  position:relative;
+}
+.cryto24hrsdata ul{
+  display: flex;
+flex-direction: row;
+flex-shrink: 1;
+flex-grow: 1;
+
+gap: 10px;
+}
+
+.cryto24hrsdata ul li{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-grow: 1;
+  color: #ffff;
+  font-size: small;
+  font-weight: bold;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.cryto24hrsdata ul li h6{
+  color: rgb(0, 208, 255);
+}
+
+.cryto24hrsdata ul li h6:hover{
+background-color: white;
+border-radius: 5px;
+color: rgb(0, 93, 114);
+transition: transform 0.2s;
+
+}
+
+.cryto24hrsdata::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  animation: shimmer 2s linear forwards;
+}
+
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.topcryptos{
+  background-color: #010d18;}
+
+
+
+.topcryptoexchanges{
+  background-color: rgb(52, 10, 10);
+}
+
+
+
+
+.topcryptos{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+
+
+
+.topcryptos .data p{
+color: white;
+font: bolder;
+font-size: 20px;
+position: relative;
+margin-top: 250px;
+margin-left: 25px;
+background-color: rgba(30, 34, 42, 0.5);
+
+  font-family: 'Black Ops One', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+}
+
+
+.slidabledata {
+  color: white;
+  font: bold;
+  display: flex;
+overflow: hidden;
+gap: 40px;
+  white-space: nowrap;
+
+  font-family: 'Black Ops One', cursive;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Roboto Slab', serif;
+
+  }
+
+
+
+
+
+ 
+
+.box {
+  margin-top: 70px;
+    width: 471px;
+    height: 460px;
+    background-color: rgb(12, 7, 7);
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.innerinner h1{
+
+  margin-top: 0px;
+}
+
+
+.topcryptoexchanges{
+
+  background-image: url(../images/backgroud.jpeg);
+  background-size: cover; /* This scales the image proportionally to cover the entire div */
+  background-repeat: no-repeat;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+.topcryptoexchanges .images{
+
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: repeat(4,1fr);
+margin-top: 200px;
+margin-left:300px ;
+margin-right:300px ;
+
+}
+
+.exchanges img{
+
+margin-top: 20px;
+margin-left: 20px;
+}
+
+
+.learnaboutblockchain{
+  background-image: url("../images/background2.png");
+}
+
+
+
+
+footer{
+  position: relative;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-rows: 0.3fr 0.4fr;
+  grid-template-columns: 2fr 1fr;
+  background-color: #1a222a;
+}
+
+
+
+.one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icon {
+  list-style: none;
+  width: fit-content;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.social_icon li {
+  animation: float 3s infinite;
+}
+
+.social_icon img {
+  width: 30px; /* Adjust the size as needed */
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.menus{
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menus li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.menus a {
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.menus li:hover{
+  background-color: #010d18;
+  border-radius: 10px;
+transition: transform 0.2s ease-in-out;
+transform: scale(1.25); /* Apply zoom-out effect on hover */
+}
+
+.three{
+  text-align: right;
+  padding: 10px;
+}
+
+.three{
+  margin: 0;
+  color: white;
+}
+
+.lable{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+ 
+}
+
+.lable h1{
+  margin-left: 300px;
+  color: #7289b6
+  ;
+  font-weight: bold;
+}
+
+.learnaboutblockchain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+
+}
+
+.headingcontent{
+  height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.content{
+  margin-left: 10px;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  justify-content: center;
+
+height: fit-content;
+}
+
+.line{
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}

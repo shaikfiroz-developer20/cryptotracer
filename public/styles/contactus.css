@@ -1,0 +1,58 @@
+#body4{
+
+    display: grid;
+    grid-template-rows: 0.2fr 3fr 1.3fr;
+gap: 20px;
+background-color: #010d18;
+color: #fff;
+
+}
+
+
+/* Style for form container */
+.form-containers {
+    width: 850px;
+   
+    margin: 0 auto;
+    padding: 20px;
+background-image: url("../images/background2.png");
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Style for input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

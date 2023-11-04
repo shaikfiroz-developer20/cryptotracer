@@ -1,0 +1,53 @@
+#body2{
+display: grid;
+color: rgb(255, 255, 255);
+grid-template-rows: 0.2fr 8fr 1fr;
+background-color:#010d18 ;
+}
+
+
+.newsbuddy{
+ display:flex;
+align-items: center;
+justify-content: flex-start;
+width: 90%;
+gap: 20px;
+border: 0.7px solid gray;
+margin-top: 10px;
+
+}
+
+.inoutpa{
+    display: grid;
+    align-items: center;
+justify-content: center;
+}
+
+.pa2{
+font-size: small;
+font-family: 'Courier New', Courier, monospace;
+}
+.pa3{
+    color: green;
+font-size: small;
+
+}
+
+.newsbuddy ul div{
+
+
+text-decoration: none;
+
+
+}
+
+.pa{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+.newsbuddy a{
+    color: rgb(64, 147, 178);
+text-decoration: none;
+}
